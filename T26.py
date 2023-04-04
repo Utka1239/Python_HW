@@ -5,8 +5,10 @@ A = 3; B = 5 -> 243 (3⁵)
 A = 2; B = 3 -> 8'''
 
 def f(a, b):
-    
+    if b == 0:
+        a = 1
+        return a
     return a ** b
 
 
-print(f(3,0))
+print(f(3,5))
